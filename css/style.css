@@ -3,8 +3,6 @@ html {
   box-sizing: border-box;
 }
 
-
-
 * {
   list-style:none;
   text-decoration:none;
@@ -61,13 +59,9 @@ body {
   width: 2.3em;
 }
 
-
-
-
 .nav-links ul li{
   display: inline-block;
   padding-right: 1.7em;
-
 }
 
 .nav-links ul li a{
@@ -137,12 +131,8 @@ text-decoration: underline;
   right: 210px;
 }
 
-
-
   .search-wrapper-tablet input[type="search"], .search-wrapper-tablet i, .search-wrapper-mobile input[type="search"], .search-wrapper-mobile i
    {display: none;}
-
-
 
 
 .content-wrapper {
@@ -218,9 +208,6 @@ margin-left:1.7em;
 font-weight: normal;
 font-size: 0.85em;
 }
-
-
-
 
 
 @media (max-width:850px) {
@@ -357,7 +344,7 @@ font-size: 0.85em;
 
   .nav-links ul li{
     display: inline-block;
-    padding-right: 1.4em;
+    padding-right: 1.2em;
 
   }
 
