@@ -244,6 +244,19 @@ font-size: 0.85em;
     width: 100%;
     height: 500px;
     position: relative;
+  }
+
+  .header-tablet h1 {
+
+  font-family: 'Poppins', sans-serif;
+  color: #FAFAD2;
+  font-size: 2.8em;
+  text-decoration: underline;
+  margin-top: 4.4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 
   }
 
