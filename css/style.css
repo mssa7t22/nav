@@ -79,7 +79,7 @@ body {
   display: flex;
   justify-content:flex-end;
   align-items: center;
-  margin: 0.9em 1.7em;
+  margin-top: 0.9em;
 }
 
 .header {
@@ -101,25 +101,35 @@ text-decoration: underline;
 
 }
 
+.search-wrapper #search {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 2em;
+  position: absolute;
+  top: 2em;
+  width: 200px;
+}
+
+
+
 .search-wrapper input[type="search"] {
   color: #917c70;
   background-color: transparent;
   font-size: 0.9em;
   padding: 0.25em 0.35em 0.25em 1.63em;
-  width: 200px;
   border:none;
   border-bottom: 1px solid #2d3031;
-  position: absolute;
-  top: 2em;
-  right:2em;
 }
 
 .search-wrapper input[type="search"]:focus {
   outline: none;
   padding-bottom: 0.36em;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
   border-bottom: 1px solid #be4d25;
 }
+
+
 
 
 .search-wrapper input[type="search"]::placeholder {color: #776a62;}
@@ -127,12 +137,8 @@ text-decoration: underline;
 .search-wrapper i {
   color: #be4d25;
   position: absolute;
-  top: 2em;
-  right: 210px;
+  right: 185px;
 }
-
-  .search-wrapper-tablet input[type="search"], .search-wrapper-tablet i, .search-wrapper-mobile input[type="search"], .search-wrapper-mobile i
-   {display: none;}
 
 
 .content-wrapper {
@@ -231,12 +237,7 @@ font-size: 0.85em;
   }
 
 
-  .search-wrapper input[type="search"], .search-wrapper i {display: none;}
-
-
-  .header {display: none;}
-
-  .header-tablet {
+  .header {
     background-image: url("../images/oman-1.jpg");
     background-repeat: no-repeat;
     background-position: left;
@@ -246,13 +247,12 @@ font-size: 0.85em;
     position: relative;
   }
 
-  .header-tablet h1 {
+  .header h1 {
 
   font-family: 'Poppins', sans-serif;
   color: #FAFAD2;
   font-size: 2.8em;
   text-decoration: underline;
-  margin-top: 4.4em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -260,49 +260,48 @@ font-size: 0.85em;
 
   }
 
-  .search-wrapper-tablet input[type="search"] {
-    display: flex;
-    align-items: center !important;
-    justify-content: center !important;
-    width: 94%;
-    margin-left: 1.6em !important;
-    margin-right: 1.6em !important;
+  .search-wrapper input[type="search"] {
+
+    width: 50%;
     padding: 0.25em 0.35em 0.25em 1.67em;
     color: #fff;
     font-size: 0.9em;
     background-color: transparent;
     border:none;
     border-bottom: 1px solid #2d3031;
-    position: relative;
-    top: 1.6em;
+    transition-duration: 0.5s;
   }
 
-  .search-wrapper-tablet input[type="search"]:focus {
+  .search-wrapper #search i {
+    color: #be4d25;
+    position: absolute;
+    left: 1em;
+  }
+
+  .search-wrapper #search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 2em;
+    width: 93% !important;
+  }
+
+
+  .search-wrapper input[type="search"]:focus {
+
     outline: none;
     padding-bottom: 0.36em;
     transition-duration: 1s;
     border-bottom: 1px solid #be4d25;
+    box-shadow: 0 2px 4px -3px black;
   }
 
-  .search-wrapper-tablet input[type="search"]::placeholder {
+  .search-wrapper input[type="search"]::placeholder {
     color: #fff;
   }
 
-  .search-wrapper-tablet  i {
-    display: inline-block;
-    color: #be4d25;
-    position:absolute;
-    top:4.7em;
-    left: 1.65em;
 
-  }
-
-  .search-wrapper-tablet  i {
-    color: #be4d25;
-    position: absolute;
-    top: 1.6em;
-    left: 20px;
-  }
 
 
   .content-wrapper {
@@ -361,42 +360,35 @@ font-size: 0.85em;
 
   }
 
-
-  .header {display: none;}
-
-  .header-mobile {
-    background-image: url("../images/oman-1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 500px;
-    position: relative;
+  .search-wrapper #search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-
-  .search-wrapper-mobile input[type="search"] {
-
-    display: flex;
-    align-items: center !important;
-    justify-content: center !important;
-    width: 93%;
-    margin-left: 1.4em !important;
-    margin-right: 1.4em !important;
+  .search-wrapper #search input[type="search"] {
+    width:90%;
     padding: 0.25em 0.35em 0.25em 1.67em;
     color: #fff;
     font-size: 0.9em;
     background-color: transparent;
     border:none;
     border-bottom: 1px solid #2d3031;
-    position: relative;
-    top: 1.6em;
   }
 
-  .search-wrapper-mobile i {
+  .search-wrapper #search input[type="search"]:focus {
+    border-bottom: 1px solid #be4d25;
+    transition-duration: 0.8s;
+    box-shadow: 0 2px 4px -3px black;
+  }
+
+
+
+  .search-wrapper #search i {
       color: #be4d25;
       position: absolute;
-      top: 1.6em;
-      left: 20px;
+      left: 0.5em;
+
     }
 
 
